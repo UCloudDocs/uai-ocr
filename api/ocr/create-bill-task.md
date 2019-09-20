@@ -1,6 +1,6 @@
 {{indexmenu_n>20}}
 
-====创建票据识别任务====
+# 创建票据识别任务
 
 **请求方式 POST http://api.uai.ucloud.cn/v1/ocr/bill**
 
@@ -22,6 +22,7 @@
 **请求Header参数**
 
 | 参数 | 类型 | 说明 | 是否必须 |
+| ---- | ---- | ---- | -------- |
 | Signature | String | 签名 | 是 |
 | PublicKey | String | 公钥 | 是 |
 | ResourceId | String | 资源ID | 是 |
@@ -30,14 +31,15 @@
 **请求参数(Multipart/Form-data)**
 
 | 参数 | 类型 | 说明 | 是否必须 |
+| ---- | ---- | ---- | -------- |
 | Method | String | 请求方式，可选方式：url - 图像url方式，file - 图像二进制文件方式 | 是 |
 | Url | String | 图像Url, Method='url'时必填 | 否 |
 | Image | Binary | 图像二进制文件，Method='file'时必填 | 否 |
 
-
 **响应参数(JSON)**
 
 | 参数 | 类型 | 说明 |
+| ---- | ---- | ---- |
 | RetCode | Int | 错误码 |
 | Message | String | 错误信息 |
 | Timestamp | Int | unix时间戳 |
@@ -45,7 +47,8 @@
 
 **Result:**
 
-| 参数          | 类型      | 说明      |
+| 参数 | 类型 | 说明 |
+| ---- | ---- | ---- |
 | ExpireDate  | String  | 票据过期时间  |
 | TicketId    | String  | 票据ID    |
 | Money       | String  | 票据金额    |

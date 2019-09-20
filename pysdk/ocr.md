@@ -1,16 +1,17 @@
 {{indexmenu_n>30}}
 
-====OCR====
+# OCR
 
-####使用说明
+## 使用说明
 
 ```
 python ocr_tool.py ocr {idcard,bill} ...
 ```
 
-####参数说明
+## 参数说明
 
 | 参数名称 | 参数类型 | 参数说明 |
+| -------- | -------- | -------- |
 | public\_key | String | 用户的公钥 |
 | resource\_id | String | 资源ID|
 | timestamp | Int | 时间戳信息|
@@ -19,7 +20,7 @@ python ocr_tool.py ocr {idcard,bill} ...
 | image | String | 图片内容 |
 | url | String | 图片地址 |
 
-####1. 创建OCR身份证识别任务
+### 1.  创建OCR身份证识别任务
 
 ```
 python ocr_tool.py ocr idcard  --signature SIGNATURE \
@@ -31,7 +32,7 @@ python ocr_tool.py ocr idcard  --signature SIGNATURE \
   				[--url URL]
 ```
 
-####2. 创建OCR票据识别任务
+### 2.  创建OCR票据识别任务
 
 ```
 python ocr_tool.py ocr bill  --signature SIGNATURE \

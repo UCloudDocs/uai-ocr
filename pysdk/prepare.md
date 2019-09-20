@@ -1,18 +1,18 @@
 {{indexmenu_n>10}}
 
-====环境准备====
+# 环境准备
 
-####环境要求
+## 环境要求
 
 - Python 2.7
 - UAI-Ocr SDK
   - git clone https://github.com/ucloud/uai-saas-sdk.git
   - sudo python setup.py install
 
+## UAI-OCR 工具一览
 
-####UAI-OCR 工具一览
-
-| 命令子类       | 命令名称        | 命令说明         |
+| 命令子类 | 命令名称 | 命令说明 |
+| -------- | -------- | -------- |
 | resource   | create      | 创建资源         |
 |            | delete      | 删除资源         |
 |            | modifyname  | 修改资源名称信息     |
