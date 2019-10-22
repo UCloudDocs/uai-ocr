@@ -1,6 +1,6 @@
 {{indexmenu_n>30}}
 
-# OCR
+# OCR识别
 
 ## 使用说明
 
